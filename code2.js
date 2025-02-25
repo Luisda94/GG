@@ -92,7 +92,8 @@ gdjs.JugarCode.GDSoundButton2Objects4= [];
 
 gdjs.JugarCode.eventsList0 = function(runtimeScene) {
 
-};gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDMusicButtonObjects1Objects = Hashtable.newFrom({"MusicButton": gdjs.JugarCode.GDMusicButtonObjects1});
+};gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDMenuInicioObjects1Objects = Hashtable.newFrom({"MenuInicio": gdjs.JugarCode.GDMenuInicioObjects1});
+gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDMusicButtonObjects1Objects = Hashtable.newFrom({"MusicButton": gdjs.JugarCode.GDMusicButtonObjects1});
 gdjs.JugarCode.eventsList1 = function(runtimeScene) {
 
 {
@@ -132,8 +133,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDMenuInicioObjects1Objects = Hashtable.newFrom({"MenuInicio": gdjs.JugarCode.GDMenuInicioObjects1});
-gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDBarraObjects1Objects = Hashtable.newFrom({"Barra": gdjs.JugarCode.GDBarraObjects1});
+};gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDBarraObjects1Objects = Hashtable.newFrom({"Barra": gdjs.JugarCode.GDBarraObjects1});
 gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDObstaculo1Objects3Objects = Hashtable.newFrom({"Obstaculo1": gdjs.JugarCode.GDObstaculo1Objects3});
 gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDObstaculo2Objects3Objects = Hashtable.newFrom({"Obstaculo2": gdjs.JugarCode.GDObstaculo2Objects3});
 gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDObstaculo3Objects2Objects = Hashtable.newFrom({"Obstaculo3": gdjs.JugarCode.GDObstaculo3Objects2});
@@ -297,44 +297,6 @@ gdjs.JugarCode.eventsList5 = function(runtimeScene) {
 
 {
 
-/* Reuse gdjs.JugarCode.GDPlayerObjects2 */
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15201708);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.JugarCode.GDPlayerObjects2.length;i<l;++i) {
-    if ( gdjs.JugarCode.GDPlayerObjects2[i].getBehavior("Health").IsJustDamaged((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.JugarCode.GDPlayerObjects2[k] = gdjs.JugarCode.GDPlayerObjects2[i];
-        ++k;
-    }
-}
-gdjs.JugarCode.GDPlayerObjects2.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.JugarCode.GDPlayerObjects2.length;i<l;++i) {
-    if ( (gdjs.JugarCode.GDPlayerObjects2[i].getBehavior("Animation").getAnimationName()).endsWith("De") ) {
-        isConditionTrue_0 = true;
-        gdjs.JugarCode.GDPlayerObjects2[k] = gdjs.JugarCode.GDPlayerObjects2[i];
-        ++k;
-    }
-}
-gdjs.JugarCode.GDPlayerObjects2.length = k;
-}
-}
-if (isConditionTrue_0) {
-}
-
-}
-
-
-};gdjs.JugarCode.eventsList6 = function(runtimeScene) {
-
-{
-
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
@@ -404,7 +366,7 @@ for (var i = 0, k = 0, l = gdjs.JugarCode.GDPlayerObjects2.length;i<l;++i) {
 gdjs.JugarCode.GDPlayerObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15199268);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9717516);
 }
 }
 }
@@ -425,45 +387,59 @@ gdjs.copyArray(runtimeScene.getObjects("FlatHeartBar"), gdjs.JugarCode.GDFlatHea
     gdjs.JugarCode.GDFlatHeartBarObjects2[i].SetValue((( gdjs.JugarCode.GDPlayerObjects2.length === 0 ) ? 0 :gdjs.JugarCode.GDPlayerObjects2[0].getBehavior("Health").Health((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(0).sub(1);
-}
-{ //Subevents
-gdjs.JugarCode.eventsList5(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
 
 {
 
-
-
-}
-
-
-{
-
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.JugarCode.GDPlayerObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber() >= 1);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16360732);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() <= 0);
+for (var i = 0, k = 0, l = gdjs.JugarCode.GDPlayerObjects2.length;i<l;++i) {
+    if ( gdjs.JugarCode.GDPlayerObjects2[i].getBehavior("Health").IsJustDamaged((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.JugarCode.GDPlayerObjects2[k] = gdjs.JugarCode.GDPlayerObjects2[i];
+        ++k;
+    }
+}
+gdjs.JugarCode.GDPlayerObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.JugarCode.GDPlayerObjects2.length;i<l;++i) {
+    if ( (gdjs.JugarCode.GDPlayerObjects2[i].getBehavior("Animation").getAnimationName()).endsWith("De") ) {
+        isConditionTrue_0 = true;
+        gdjs.JugarCode.GDPlayerObjects2[k] = gdjs.JugarCode.GDPlayerObjects2[i];
+        ++k;
+    }
+}
+gdjs.JugarCode.GDPlayerObjects2.length = k;
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(1);
-}{runtimeScene.getGame().getVariables().getFromIndex(1).sub(1);
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game over", false);
-}}
+}
+
+}
+
+
+{
+
+
 
 }
 
 
 };gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDBarraPuntosObjects1Objects = Hashtable.newFrom({"BarraPuntos": gdjs.JugarCode.GDBarraPuntosObjects1});
 gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDObstaculo1Objects1ObjectsGDgdjs_9546JugarCode_9546GDObstaculo2Objects1ObjectsGDgdjs_9546JugarCode_9546GDObstaculo3Objects1Objects = Hashtable.newFrom({"Obstaculo1": gdjs.JugarCode.GDObstaculo1Objects1, "Obstaculo2": gdjs.JugarCode.GDObstaculo2Objects1, "Obstaculo3": gdjs.JugarCode.GDObstaculo3Objects1});
-gdjs.JugarCode.eventsList7 = function(runtimeScene) {
+gdjs.JugarCode.eventsList6 = function(runtimeScene) {
+
+};gdjs.JugarCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -480,55 +456,18 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.window.isFullScreen(runtimeScene);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.hasTouchScreen(runtimeScene);
-}
-}
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.window.setAdaptGameResolutionAtRuntime(runtimeScene, true);
-}{gdjs.evtTools.window.setFullScreen(runtimeScene, true, true);
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MusicButton"), gdjs.JugarCode.GDMusicButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDMusicButtonObjects1Objects, runtimeScene, true, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15187036);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16417052);
+}
 }
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.variable.toggleVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2));
-}
-{ //Subevents
-gdjs.JugarCode.eventsList1(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
@@ -548,6 +487,32 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
 }}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("MusicButton"), gdjs.JugarCode.GDMusicButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDMusicButtonObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13866900);
+}
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.variable.toggleVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2));
+}
+{ //Subevents
+gdjs.JugarCode.eventsList1(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -577,7 +542,7 @@ gdjs.JugarCode.eventsList3(runtimeScene);
 {
 
 
-gdjs.JugarCode.eventsList6(runtimeScene);
+gdjs.JugarCode.eventsList5(runtimeScene);
 }
 
 
@@ -627,6 +592,52 @@ gdjs.copyArray(runtimeScene.getObjects("Puntos"), gdjs.JugarCode.GDPuntosObjects
 {
 
 
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() <= 0);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).sub(1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game over", false);
+}}
+
+}
+
+
+{
+
+
+gdjs.JugarCode.eventsList6(runtimeScene);
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber() >= 10);
+}
+if (isConditionTrue_0) {
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
 
 }
 
