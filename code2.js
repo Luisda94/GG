@@ -366,7 +366,7 @@ for (var i = 0, k = 0, l = gdjs.JugarCode.GDPlayerObjects2.length;i<l;++i) {
 gdjs.JugarCode.GDPlayerObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9717516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15165476);
 }
 }
 }
@@ -398,7 +398,7 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.JugarCode.GDPlayerObjects
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16360732);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15165724);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -462,7 +462,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.hasTouchScreen(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16417052);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15152676);
 }
 }
 }
@@ -503,7 +503,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.JugarCode.mapOfGDgdjs_9546JugarCode_9546GDMusicButtonObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13866900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15154396);
 }
 }
 }
