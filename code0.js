@@ -3,9 +3,6 @@ gdjs.MenuCode.localVariables = [];
 gdjs.MenuCode.GDFondoAObjects1= [];
 gdjs.MenuCode.GDFondoAObjects2= [];
 gdjs.MenuCode.GDFondoAObjects3= [];
-gdjs.MenuCode.GDFondoBObjects1= [];
-gdjs.MenuCode.GDFondoBObjects2= [];
-gdjs.MenuCode.GDFondoBObjects3= [];
 gdjs.MenuCode.GDTitleObjects1= [];
 gdjs.MenuCode.GDTitleObjects2= [];
 gdjs.MenuCode.GDTitleObjects3= [];
@@ -15,9 +12,6 @@ gdjs.MenuCode.GDLogoObjects3= [];
 gdjs.MenuCode.GDMusicButtonObjects1= [];
 gdjs.MenuCode.GDMusicButtonObjects2= [];
 gdjs.MenuCode.GDMusicButtonObjects3= [];
-gdjs.MenuCode.GDSoundButtonObjects1= [];
-gdjs.MenuCode.GDSoundButtonObjects2= [];
-gdjs.MenuCode.GDSoundButtonObjects3= [];
 gdjs.MenuCode.GDBotonJugarObjects1= [];
 gdjs.MenuCode.GDBotonJugarObjects2= [];
 gdjs.MenuCode.GDBotonJugarObjects3= [];
@@ -78,7 +72,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15094460);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15120868);
 }
 }
 if (isConditionTrue_0) {
@@ -136,7 +130,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15097188);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15123596);
 }
 }
 }
@@ -158,9 +152,6 @@ runtimeScene.getOnceTriggers().startNewFrame();
 gdjs.MenuCode.GDFondoAObjects1.length = 0;
 gdjs.MenuCode.GDFondoAObjects2.length = 0;
 gdjs.MenuCode.GDFondoAObjects3.length = 0;
-gdjs.MenuCode.GDFondoBObjects1.length = 0;
-gdjs.MenuCode.GDFondoBObjects2.length = 0;
-gdjs.MenuCode.GDFondoBObjects3.length = 0;
 gdjs.MenuCode.GDTitleObjects1.length = 0;
 gdjs.MenuCode.GDTitleObjects2.length = 0;
 gdjs.MenuCode.GDTitleObjects3.length = 0;
@@ -170,9 +161,6 @@ gdjs.MenuCode.GDLogoObjects3.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects1.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects2.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects3.length = 0;
-gdjs.MenuCode.GDSoundButtonObjects1.length = 0;
-gdjs.MenuCode.GDSoundButtonObjects2.length = 0;
-gdjs.MenuCode.GDSoundButtonObjects3.length = 0;
 gdjs.MenuCode.GDBotonJugarObjects1.length = 0;
 gdjs.MenuCode.GDBotonJugarObjects2.length = 0;
 gdjs.MenuCode.GDBotonJugarObjects3.length = 0;
@@ -184,9 +172,6 @@ gdjs.MenuCode.eventsList1(runtimeScene);
 gdjs.MenuCode.GDFondoAObjects1.length = 0;
 gdjs.MenuCode.GDFondoAObjects2.length = 0;
 gdjs.MenuCode.GDFondoAObjects3.length = 0;
-gdjs.MenuCode.GDFondoBObjects1.length = 0;
-gdjs.MenuCode.GDFondoBObjects2.length = 0;
-gdjs.MenuCode.GDFondoBObjects3.length = 0;
 gdjs.MenuCode.GDTitleObjects1.length = 0;
 gdjs.MenuCode.GDTitleObjects2.length = 0;
 gdjs.MenuCode.GDTitleObjects3.length = 0;
@@ -196,9 +181,6 @@ gdjs.MenuCode.GDLogoObjects3.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects1.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects2.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects3.length = 0;
-gdjs.MenuCode.GDSoundButtonObjects1.length = 0;
-gdjs.MenuCode.GDSoundButtonObjects2.length = 0;
-gdjs.MenuCode.GDSoundButtonObjects3.length = 0;
 gdjs.MenuCode.GDBotonJugarObjects1.length = 0;
 gdjs.MenuCode.GDBotonJugarObjects2.length = 0;
 gdjs.MenuCode.GDBotonJugarObjects3.length = 0;
