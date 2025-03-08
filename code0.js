@@ -24,6 +24,9 @@ gdjs.MenuCode.GDNuevoLogoObjects3= [];
 gdjs.MenuCode.GDcloudoOneObjects1= [];
 gdjs.MenuCode.GDcloudoOneObjects2= [];
 gdjs.MenuCode.GDcloudoOneObjects3= [];
+gdjs.MenuCode.GDSoundButtonObjects1= [];
+gdjs.MenuCode.GDSoundButtonObjects2= [];
+gdjs.MenuCode.GDSoundButtonObjects3= [];
 
 
 gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDBotonJugarObjects1Objects = Hashtable.newFrom({"BotonJugar": gdjs.MenuCode.GDBotonJugarObjects1});
@@ -42,9 +45,9 @@ if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.MenuCode.GDMusicButtonObjects1, gdjs.MenuCode.GDMusicButtonObjects2);
 
 {for(var i = 0, len = gdjs.MenuCode.GDMusicButtonObjects2.length ;i < len;++i) {
-    gdjs.MenuCode.GDMusicButtonObjects2[i].getBehavior("Animation").setAnimationName("off");
+    gdjs.MenuCode.GDMusicButtonObjects2[i].getBehavior("Animation").setAnimationName("on");
 }
-}{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "funny-bgm-240795.mp3", 1, true, 100, 1);
+}{gdjs.evtTools.sound.continueMusicOnChannel(runtimeScene, 1);
 }}
 
 }
@@ -60,7 +63,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 /* Reuse gdjs.MenuCode.GDMusicButtonObjects1 */
 {for(var i = 0, len = gdjs.MenuCode.GDMusicButtonObjects1.length ;i < len;++i) {
-    gdjs.MenuCode.GDMusicButtonObjects1[i].getBehavior("Animation").setAnimationName("on");
+    gdjs.MenuCode.GDMusicButtonObjects1[i].getBehavior("Animation").setAnimationName("off");
 }
 }{gdjs.evtTools.sound.pauseMusicOnChannel(runtimeScene, 1);
 }}
@@ -68,7 +71,47 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.MenuCode.eventsList1 = function(runtimeScene) {
+};gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDSoundButtonObjects1Objects = Hashtable.newFrom({"SoundButton": gdjs.MenuCode.GDSoundButtonObjects1});
+gdjs.MenuCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = !runtimeScene.getGame().getVariables().getFromIndex(4).getAsBoolean();
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(gdjs.MenuCode.GDSoundButtonObjects1, gdjs.MenuCode.GDSoundButtonObjects2);
+
+{for(var i = 0, len = gdjs.MenuCode.GDSoundButtonObjects2.length ;i < len;++i) {
+    gdjs.MenuCode.GDSoundButtonObjects2[i].getBehavior("Animation").setAnimationName("on");
+}
+}{gdjs.evtTools.sound.continueSoundOnChannel(runtimeScene, 2);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(4).getAsBoolean();
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.MenuCode.GDSoundButtonObjects1 */
+{for(var i = 0, len = gdjs.MenuCode.GDSoundButtonObjects1.length ;i < len;++i) {
+    gdjs.MenuCode.GDSoundButtonObjects1[i].getBehavior("Animation").setAnimationName("off");
+}
+}{gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 2);
+}}
+
+}
+
+
+};gdjs.MenuCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -78,7 +121,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15230060);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12591748);
 }
 }
 if (isConditionTrue_0) {
@@ -98,6 +141,11 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDBotonJugarObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16142764);
+}
+}
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Jugar", false);
@@ -116,9 +164,33 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDInstruccionesObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13349252);
+}
+}
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "instrucciones", false);
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "select-sound-121244.mp3", 2, false, 50, 1);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = !runtimeScene.getGame().getVariables().getFromIndex(2).getAsBoolean();
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "funny-bgm-240795.mp3", 1, true, 50, 1);
 }}
 
 }
@@ -136,7 +208,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15267204);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14153404);
 }
 }
 }
@@ -194,6 +266,27 @@ let isConditionTrue_0 = false;
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SoundButton"), gdjs.MenuCode.GDSoundButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDSoundButtonObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.variable.toggleVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(4));
+}
+{ //Subevents
+gdjs.MenuCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
 };
 
 gdjs.MenuCode.func = function(runtimeScene) {
@@ -223,8 +316,11 @@ gdjs.MenuCode.GDNuevoLogoObjects3.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects1.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects2.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects3.length = 0;
+gdjs.MenuCode.GDSoundButtonObjects1.length = 0;
+gdjs.MenuCode.GDSoundButtonObjects2.length = 0;
+gdjs.MenuCode.GDSoundButtonObjects3.length = 0;
 
-gdjs.MenuCode.eventsList1(runtimeScene);
+gdjs.MenuCode.eventsList2(runtimeScene);
 gdjs.MenuCode.GDFondoAObjects1.length = 0;
 gdjs.MenuCode.GDFondoAObjects2.length = 0;
 gdjs.MenuCode.GDFondoAObjects3.length = 0;
@@ -249,6 +345,9 @@ gdjs.MenuCode.GDNuevoLogoObjects3.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects1.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects2.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects3.length = 0;
+gdjs.MenuCode.GDSoundButtonObjects1.length = 0;
+gdjs.MenuCode.GDSoundButtonObjects2.length = 0;
+gdjs.MenuCode.GDSoundButtonObjects3.length = 0;
 
 
 return;

@@ -23,10 +23,10 @@ gdjs.copyArray(runtimeScene.getObjects("MenuInicio"), gdjs.MaxScoreCode.GDMenuIn
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MaxScoreCode.mapOfGDgdjs_9546MaxScoreCode_9546GDMenuInicioObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MaxScoreCode.mapOfGDgdjs_9546MaxScoreCode_9546GDMenuInicioObjects1Objects, runtimeScene, true, false);
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
