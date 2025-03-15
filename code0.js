@@ -28,6 +28,10 @@ gdjs.MenuCode.GDcloudoOneObjects1= [];
 gdjs.MenuCode.GDcloudoOneObjects2= [];
 gdjs.MenuCode.GDcloudoOneObjects3= [];
 gdjs.MenuCode.GDcloudoOneObjects4= [];
+gdjs.MenuCode.GDGuardarPuntajeObjects1= [];
+gdjs.MenuCode.GDGuardarPuntajeObjects2= [];
+gdjs.MenuCode.GDGuardarPuntajeObjects3= [];
+gdjs.MenuCode.GDGuardarPuntajeObjects4= [];
 gdjs.MenuCode.GDMusicButtonObjects1= [];
 gdjs.MenuCode.GDMusicButtonObjects2= [];
 gdjs.MenuCode.GDMusicButtonObjects3= [];
@@ -48,7 +52,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15472524);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15537596);
 }
 }
 if (isConditionTrue_0) {
@@ -67,7 +71,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15473012);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15538084);
 }
 }
 if (isConditionTrue_0) {
@@ -179,7 +183,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDBotonJugarObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15476356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15541428);
 }
 }
 }
@@ -203,7 +207,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDInstruccionesObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15478108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15543180);
 }
 }
 }
@@ -226,7 +230,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15479076);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15544148);
 }
 }
 }
@@ -296,7 +300,8 @@ gdjs.copyArray(runtimeScene.getObjects("SoundButton"), gdjs.MenuCode.GDSoundButt
 
 };gdjs.MenuCode.eventsList3 = function(runtimeScene) {
 
-};gdjs.MenuCode.eventsList4 = function(runtimeScene) {
+};gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDGuardarPuntajeObjects1Objects = Hashtable.newFrom({"GuardarPuntaje": gdjs.MenuCode.GDGuardarPuntajeObjects1});
+gdjs.MenuCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -316,6 +321,26 @@ gdjs.MenuCode.eventsList2(runtimeScene);
 
 
 gdjs.MenuCode.eventsList3(runtimeScene);
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("GuardarPuntaje"), gdjs.MenuCode.GDGuardarPuntajeObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDGuardarPuntajeObjects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "select-sound-121244.mp3", 3, false, 40, 1);
+}{gdjs.evtTools.storage.readNumberFromJSONFile("Storage", "Storage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(3));
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MaxScore", false);
+}}
+
 }
 
 
@@ -364,6 +389,10 @@ gdjs.MenuCode.GDcloudoOneObjects1.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects2.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects3.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects4.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects1.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects2.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects3.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects4.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects1.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects2.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects3.length = 0;
@@ -402,6 +431,10 @@ gdjs.MenuCode.GDcloudoOneObjects1.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects2.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects3.length = 0;
 gdjs.MenuCode.GDcloudoOneObjects4.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects1.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects2.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects3.length = 0;
+gdjs.MenuCode.GDGuardarPuntajeObjects4.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects1.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects2.length = 0;
 gdjs.MenuCode.GDMusicButtonObjects3.length = 0;

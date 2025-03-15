@@ -129,7 +129,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16209180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15750524);
 }
 }
 }
@@ -153,7 +153,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13215556);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15751796);
 }
 }
 }
@@ -204,6 +204,33 @@ let isConditionTrue_0 = false;
 
 
 gdjs.MaxScoreCode.eventsList2(runtimeScene);
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Puntos"), gdjs.MaxScoreCode.GDPuntosObjects1);
+{gdjs.evtTools.storage.readNumberFromJSONFile("Storage", "Storage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(3));
+}{for(var i = 0, len = gdjs.MaxScoreCode.GDPuntosObjects1.length ;i < len;++i) {
+    gdjs.MaxScoreCode.GDPuntosObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber()));
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
 }
 
 
