@@ -52,7 +52,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15537596);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15566796);
 }
 }
 if (isConditionTrue_0) {
@@ -71,7 +71,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15538084);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15567284);
 }
 }
 if (isConditionTrue_0) {
@@ -183,7 +183,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDBotonJugarObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15541428);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15570628);
 }
 }
 }
@@ -207,7 +207,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDInstruccionesObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15543180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15572380);
 }
 }
 }
@@ -230,7 +230,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15544148);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15573348);
 }
 }
 }
@@ -298,10 +298,44 @@ gdjs.copyArray(runtimeScene.getObjects("SoundButton"), gdjs.MenuCode.GDSoundButt
 }
 
 
-};gdjs.MenuCode.eventsList3 = function(runtimeScene) {
-
 };gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDGuardarPuntajeObjects1Objects = Hashtable.newFrom({"GuardarPuntaje": gdjs.MenuCode.GDGuardarPuntajeObjects1});
-gdjs.MenuCode.eventsList4 = function(runtimeScene) {
+gdjs.MenuCode.eventsList3 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("GuardarPuntaje"), gdjs.MenuCode.GDGuardarPuntajeObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDGuardarPuntajeObjects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "select-sound-121244.mp3", 3, false, 40, 1);
+}{gdjs.evtTools.storage.readNumberFromJSONFile("Storage", "Storage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(3));
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MaxScore", false);
+}}
+
+}
+
+
+};gdjs.MenuCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(3);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(0);
+}}
+
+}
+
+
+};gdjs.MenuCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -326,33 +360,8 @@ gdjs.MenuCode.eventsList3(runtimeScene);
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("GuardarPuntaje"), gdjs.MenuCode.GDGuardarPuntajeObjects1);
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDGuardarPuntajeObjects1Objects, runtimeScene, true, false);
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "select-sound-121244.mp3", 3, false, 40, 1);
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Storage", "Storage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(3));
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MaxScore", false);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(3);
-}{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(0);
-}}
-
+gdjs.MenuCode.eventsList4(runtimeScene);
 }
 
 
@@ -402,7 +411,7 @@ gdjs.MenuCode.GDSoundButtonObjects2.length = 0;
 gdjs.MenuCode.GDSoundButtonObjects3.length = 0;
 gdjs.MenuCode.GDSoundButtonObjects4.length = 0;
 
-gdjs.MenuCode.eventsList4(runtimeScene);
+gdjs.MenuCode.eventsList5(runtimeScene);
 gdjs.MenuCode.GDFondoAObjects1.length = 0;
 gdjs.MenuCode.GDFondoAObjects2.length = 0;
 gdjs.MenuCode.GDFondoAObjects3.length = 0;
